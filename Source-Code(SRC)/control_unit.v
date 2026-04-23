@@ -9,7 +9,7 @@ module control_unit(
 always @(*) begin
     case(opcode)
 
-        7'b0110011: begin // R-type instructions
+        7'b0110011: begin 
             reg_write = 1;
 
             case({funct7, funct3})
